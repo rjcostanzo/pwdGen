@@ -32,7 +32,7 @@ function getCriteria() {
 
   if (passLength < 8 || passLength > 128)
   {
-    alert("Please choose a valid length. The page will refresh.");
+    alert("Choose a valid length. Click 'Generate Password' again to retry.");
     location.reload;
     return null;
   }
@@ -96,7 +96,7 @@ var newLetter;
   }
   else
   {
-    alert("Generation aborted. The page will refresh.");
+    alert("Generation aborted. Click 'Generate Password' to restart.");
     location.reload;
     return null;
   }
