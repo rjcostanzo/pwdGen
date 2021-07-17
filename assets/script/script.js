@@ -82,9 +82,8 @@ var newLetter;
 
   for (let x = 0; x < passLength; x++)
   {
-    console.log("Iteration: " + x);
     newLetter = acceptableChars[Math.floor(Math.random() * acceptableChars.length)];
-    console.log("Character Chosen: " + newLetter);
+    console.log("Iteration #" + (x + 1) + ": " + newLetter);
     generatedPassword = generatedPassword + newLetter;
   }
 
@@ -105,7 +104,7 @@ var newLetter;
 
 // Write password to the #password input
 function writePassword(generatedPassword) {
-  console.log(generatedPassword);
+  console.log("Generated Password: " + generatedPassword);
   var newPassword = document.querySelector("#password");
   newPassword.innerText = generatedPassword;
 
