@@ -26,9 +26,8 @@ var acceptableChars = ['a'];
 */
 
 function getCriteria() {
-  alert("Welcome to Rio's Password Generator.");
   var acceptableChars = ['a'];
-  var passLength = prompt("Please choose a length (8-128 characters).");
+  var passLength = prompt("Welcome to Rio's Password Generator.\nPlease choose a length (8-128 characters).");
 
   if (passLength < 8 || passLength > 128)
   {
